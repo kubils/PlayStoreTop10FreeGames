@@ -27,7 +27,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Hangfire.Dashboard;
-using StackExchange.Redis;
 
 namespace PlayStoreTopGames
 {
