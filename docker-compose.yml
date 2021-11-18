@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  playstoretopgames:
+    image: ${DOCKER_REGISTRY-}playstoretopgames
+    build:
+      context: .
+      dockerfile: PlayStoreTopGames/Dockerfile
+    depends_on:
+      - mongo
+    ports:
+      - "1923:80"
+    restart: always
+    networks:
+      - localdev
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    volumes:
+      - ${WEBAPP_STORAGE_HOME}/site:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - localdev
+  mongoclient:
+    image: mongoclient/mongoclient:latest
+    container_name: mongoclient
+    hostname: mongoclient
+    depends_on:
+      - mongo
+    networks:
+      - localdev
+    ports:
+        - 2222:3000
+networks:
+  localdev:
+    driver: bridge
