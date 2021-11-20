@@ -73,7 +73,7 @@ $ docker-compose up
 
 ![image](https://user-images.githubusercontent.com/28518987/142707002-2d11654c-c8a0-4ead-a843-5a49eac8dbe2.png)
 
-### MongoExpress
+### MongoClient
 ![image](https://user-images.githubusercontent.com/28518987/142707008-52adaa03-ffe0-4853-aa93-fb9375639abe.png)
 ![image](https://user-images.githubusercontent.com/28518987/142707016-b48cb066-f2c4-427f-bf0a-eba41bc2afec.png)
 
