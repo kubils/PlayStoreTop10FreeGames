@@ -19,7 +19,7 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{74E24328-CCD1-4E62-98B0-5FC00F2B1DA1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- Application", "2- Application", "{101E0090-C80C-44F7-822B-BF28B101F987}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- Application", "2 - Application", "{101E0090-C80C-44F7-822B-BF28B101F987}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{A1508D18-5418-4AE3-9B0B-6753B9548DF9}"
 EndProject
