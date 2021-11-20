@@ -24,8 +24,8 @@ namespace PlayStoreTopGames.Controllers
             _mediator = mediator;
         }
         
-        [ObsoleteAttribute("This property is obsolete. Using for just send to db manually.")]
-        [HttpPost("SendToDbManually")]
+        [ObsoleteAttribute("This property is obsolete. Proper way running background job call methods and stores data in db")]
+        [HttpPost("SendToGamesDbManually")]
         public async Task<IActionResult> PostTopTenFreeGamesManually()
         {
             var result = await _topGameService.AddTopTenFreeGameToDb();

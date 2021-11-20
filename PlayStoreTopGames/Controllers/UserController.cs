@@ -42,8 +42,6 @@ namespace PlayStoreTopGames.Controllers
             var query =  new GetUsersQuery();
             var result = await _mediator.Send(query);
 
-            if (result == null) return BadRequest();
-            
             return Ok(result);
         }
     }
