@@ -52,8 +52,9 @@ $ docker-compose up
 ![image](https://user-images.githubusercontent.com/28518987/142706978-df561577-1e87-40ec-813d-2e8741102c85.png)
 
 - with login generates token
-![image](https://user-images.githubusercontent.com/28518987/142706983-b52f7ac5-a3a6-48e0-91c7-cb57cc02f5b0.png)
 ![image](https://user-images.githubusercontent.com/28518987/142707496-f069513c-bb7d-4e41-ba92-1e5f180e4e49.png)
+- Authorize
+![image](https://user-images.githubusercontent.com/28518987/142706983-b52f7ac5-a3a6-48e0-91c7-cb57cc02f5b0.png)
 
 ![image](https://user-images.githubusercontent.com/28518987/142706989-e3c0c686-91d7-47a6-ab24-57b71c3e3976.png)
 
