@@ -42,13 +42,8 @@ namespace UnitTests
                 Name = "aA",Surname = "sS",Email = "ks@gmail.com", Password = "ASDAasd1"
             };
 
-            _userRepository.Setup(u => u.Add(It.IsAny<User>())).ReturnsAsync(
-                new User()
-                {
-                    Name = createUserCommand.Name, Surname = createUserCommand.Surname, 
-                    CreatedDate = DateTime.Now, Email = createUserCommand.Email, Password = createUserCommand.Password,
-                    Id = ObjectId.GenerateNewId()
-                });
+            _userRepository.Setup(e => e.GetUserByEmail(It.IsAny<string>())).ReturnsAsync((User)null);
+            _userRepository.Setup(u => u.Add(It.IsAny<User>()));
 
             UserCommandHandler handler = new UserCommandHandler(_userRepository.Object, _mapper);
 

@@ -18,14 +18,9 @@ namespace Infrastructure.Repositories
             _users = MongoDatabase.GetCollection<User>(mongoDbSettings.UserCollectionName);
         }
         
-        public async Task<User> Add(User user)
+        public async Task Add(User user)
         {
-            var userExists = await GetUserByEmail(user.Email);
-
-            if (userExists != null) return null;
-
             await _users.InsertOneAsync(user);
-            return user;
         }
 
         public Task<List<User>> GetAll()

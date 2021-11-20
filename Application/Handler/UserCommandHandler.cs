@@ -21,9 +21,13 @@ namespace Application.Handler
 
        public async Task<bool> Handle(CreateUserCommand request, CancellationToken cancellationToken)
        {
-           var result = await _userRepository.Add(_mapper.Map<User>(request));
+           var userExists = await _userRepository.GetUserByEmail(request.Email);
 
-           return result != null;
+           if (userExists != null) return false;
+           
+           await _userRepository.Add(_mapper.Map<User>(request));
+
+           return true;
        }
     }
 }
