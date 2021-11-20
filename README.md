@@ -58,6 +58,7 @@ $ docker-compose up
  
 ### Authorize
 ![image](https://user-images.githubusercontent.com/28518987/142706989-e3c0c686-91d7-47a6-ab24-57b71c3e3976.png)
+![image](https://user-images.githubusercontent.com/28518987/142723725-36764bd5-1d01-4c93-83cf-7000616af400.png)
 ![image](https://user-images.githubusercontent.com/28518987/142707496-f069513c-bb7d-4e41-ba92-1e5f180e4e49.png)
 
 
