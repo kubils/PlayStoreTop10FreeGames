@@ -47,18 +47,17 @@ $ docker-compose up
 
 - For Authentication; user register and login for authenticate access get top game list or get game with TrackId endpoins, with login generated JWT token and swagger bearer authorize to apis.
 - For register valid data is required like; valid email type and not exist in db, name and surname length 1-150, password at least 5 characters and contain at 3 of 4 of the following: upper case (A-Z), lower case (a-z), number (0-9) and special character
+
 ![image](https://user-images.githubusercontent.com/28518987/142706919-f3a29777-362c-4bf7-982c-723add1077f4.png)
 ![image](https://user-images.githubusercontent.com/28518987/142706923-f1ba46fb-bbc4-433f-bcb7-7c9873ea9c1e.png)
 
-- ![image](https://user-images.githubusercontent.com/28518987/142706978-df561577-1e87-40ec-813d-2e8741102c85.png)
+![image](https://user-images.githubusercontent.com/28518987/142706978-df561577-1e87-40ec-813d-2e8741102c85.png)
 
 - with login generates token
 ![image](https://user-images.githubusercontent.com/28518987/142706983-b52f7ac5-a3a6-48e0-91c7-cb57cc02f5b0.png)
  
-- Not Authorize
+### Authorize
 ![image](https://user-images.githubusercontent.com/28518987/142706989-e3c0c686-91d7-47a6-ab24-57b71c3e3976.png)
-
-- Authorize
 ![image](https://user-images.githubusercontent.com/28518987/142707496-f069513c-bb7d-4e41-ba92-1e5f180e4e49.png)
 
 
